@@ -13,7 +13,7 @@ module.exports = {
     filename: "app.js",
   },
   devServer: {
-    // liveReload: true,
+    liveReload: true,
     contentBase: "./app",
     publicPath: "./app/",
   },
@@ -23,6 +23,13 @@ module.exports = {
         test: /\.s[ac]ss$/i,
         exclude: /node_modules/,
         use: [MiniCssExtractPlugin.loader, "css-loader", "sass-loader"],
+      },
+      {
+        test: /\.js$|jsx/,
+        exclude: /node_modules/,
+        use: {
+          loader: "babel-loader",
+        },
       },
     ],
   },

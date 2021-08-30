@@ -1,0 +1,31 @@
+// mobile
+
+@media only screen and (max-width: 720px) {
+    .bg-blue {
+        background-color: $blue-300;
+    }
+    .whats-on-title {
+        color: $white;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 50px;
+        line-height: 45px;
+        letter-spacing: 0.05em;
+        top: 60px;
+        position: absolute;
+    }
+    .desktop-hidden {
+        display: none;
+    }
+}
+
+// desktop
+
+// .md-bg-white {
+//     background-color: $white;
+// }
+
+// .md-container-margin {
+//     margin: 25px 0;
+// }
+
