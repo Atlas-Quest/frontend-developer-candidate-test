@@ -5,10 +5,9 @@ class Event extends Component {
   render() {
     const { event, onClick, active } = this.props;
     return (
-      // hide mobile image on desktop, class has changed from event-image to event-image-mobile
       <li className="event-item divider bg-blue">
         { active && <div
-          className="event-image-mobile"
+          className="event-image"
           style={{ backgroundImage: `url(${event.image})` }}
         ></div>
         }

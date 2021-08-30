@@ -11154,35 +11154,11 @@ h3,
 }
 
 @media only screen and (max-width: 720px) {
-  .bg-blue {
-    background-color: #00526a;
-  }
-
-  .whats-on-title {
-    color: #ffff;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 50px;
-    line-height: 45px;
-    letter-spacing: 0.05em;
-    top: 60px;
-    position: absolute;
-  }
-
-  .desktop-hidden {
-    display: none;
-  }
-}
-li {
-  list-style-type: none;
-}
-
-@media only screen and (max-width: 720px) {
   .event-item {
     margin: 15px 0;
   }
 
-  .event-image-mobile {
+  .event-image {
     height: 250px;
     background-position: center;
     background-repeat: no-repeat;
@@ -11253,8 +11229,60 @@ li {
     display: block;
   }
 }
+@media screen and (min-width: 720px) {
+  .desktop-event-image {
+    width: 505px;
+    height: 650px;
+  }
+}
 @media only screen and (max-width: 720px) {
   .list-container {
     padding: 133px 0;
+  }
+}
+@media only screen and (min-width: 720px) {
+  .desktop-full-height {
+    height: 100vh;
+  }
+}
+li {
+  list-style-type: none;
+}
+
+.bg-lg-blue {
+  background-color: #00526a;
+}
+
+@media screen and (max-width: 720px) {
+  .bg-blue {
+    background-color: #00526a;
+  }
+
+  .on-title {
+    color: #ffff;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 50px;
+    line-height: 45px;
+    letter-spacing: 0.05em;
+    top: 60px;
+    position: absolute;
+  }
+
+  .on-desktop-title {
+    display: none;
+  }
+}
+@media screen and (min-width: 720px) {
+  .on-title {
+    display: none;
+  }
+
+  .bg-lg-white {
+    background-color: #ffff;
+  }
+
+  .on-desktop-title {
+    -webkit-transform: rotate(-90deg);
   }
 }

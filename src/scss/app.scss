@@ -9,9 +9,48 @@
 
 // Components
 @import "components/typography";
+@import "components/event.scss";
+@import "components/event-list.scss";
 
 // Add your custom scss here
 
-@import "components/whats-on.scss";
-@import "components/event.scss";
-@import "components/event-list.scss";
+li {
+    list-style-type: none;
+}
+
+.bg-lg-blue {
+    background-color: $blue-300;
+}
+
+// mobile
+@media screen and (max-width: 720px) {
+    .bg-blue {
+        background-color: $blue-300;
+    }
+    .on-title {
+        color: $white;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 50px;
+        line-height: 45px;
+        letter-spacing: 0.05em;
+        top: 60px;
+        position: absolute;
+    }
+    .on-desktop-title {
+        display: none;
+    }
+}
+
+// desktop
+@media screen and (min-width: 720px) {
+    .on-title {
+        display: none;
+    }
+    .bg-lg-white {
+        background-color: $white;
+    }
+    .on-desktop-title {
+        -webkit-transform: rotate(-90deg);
+    }
+}

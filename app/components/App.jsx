@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import WhatsOn from "./WhatsOn.jsx";
+import EventList from "./Events/EventList.jsx";
 
 class App extends Component {
   constructor(props) {
@@ -34,7 +34,12 @@ class App extends Component {
     };
   }
   render() {
-    return <WhatsOn {...this.state} />;
+    return (
+      <div className="container-fluid g-4 g-lg-0 bg-blue">
+        <h2 className="on-title">What's On</h2>
+        <EventList {...this.state} />
+      </div>
+    );
   }
 }
 

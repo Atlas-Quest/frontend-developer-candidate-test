@@ -1,15 +1,9 @@
-li {
-    list-style-type: none;
-}
-
-// mobile
-
 @media only screen and (max-width: 720px) {
     .event-item {
         margin: 15px 0;
     }
     
-    .event-image-mobile {
+    .event-image {
         height: 250px;
         background-position: center;
         background-repeat: no-repeat;
@@ -82,5 +76,10 @@ li {
     }
 }
 
-
 // desktop
+@media screen and (min-width: 720px) {
+    .desktop-event-image {
+        width: 505px;
+        height: 650px;
+    }
+}
